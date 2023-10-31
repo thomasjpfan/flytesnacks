@@ -62,8 +62,6 @@ if __name__ == "__main__":
     welcome(name="Foo")
 
 
-from typing import List
-
 # %% [markdown]
 # By default, if the list subtype is unrecognized, a single pickle file is generated.
 # To also improve serialization and deserialization performance for cases with millions of items or large list items,
@@ -71,6 +69,8 @@ from typing import List
 # Example below shows how users can set batch size.
 #
 # %%
+from typing import List
+
 from flytekit.types.pickle.pickle import BatchSize
 from typing_extensions import Annotated
 
